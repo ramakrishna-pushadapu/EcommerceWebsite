@@ -1,0 +1,60 @@
+
+.ratting {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* Star icon styling */
+.ratting i {
+  color: #ffcc00; 
+  font-size: 16px; 
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect */
+.ratting i:hover {
+  transform: scale(1.2);
+  color: #ffb300;
+}
+
+/* Optional subtle animation when hovering entire group */
+.ratting:hover i {
+  animation: pulseStar 0.3s ease-in-out;
+}
+
+/* Keyframes for pulse */
+@keyframes pulseStar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+/* -------- PHONE (max 767px) -------- */
+@media (max-width: 767px) {
+  .ratting i {
+    font-size: 12px; 
+  }
+}
+
+/* -------- TABLET (768px–1024px) -------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ratting i {
+    font-size: 15px; 
+  }
+}
+
+/* -------- LAPTOP & DESKTOP (min 1025px) -------- */
+@media (min-width: 1025px) {
+  .ratting i {
+    font-size: 18px; 
+  }
+}

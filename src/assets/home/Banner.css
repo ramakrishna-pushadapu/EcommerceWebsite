@@ -1,0 +1,54 @@
+/*  Banner Info (bottom three boxes) */
+.banner-info {
+  position: relative;
+  z-index: 2;
+  margin-top: 2rem;
+}
+
+.banner-info ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.banner-info li {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.banner-info li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon style */
+.banner-info i {
+  color: #ffb400;
+  font-size: 1.1rem;
+}
+
+/*  Mobile responsive layout */
+@media (max-width: 768px) {
+  .banner-info ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .banner-info li {
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+}
