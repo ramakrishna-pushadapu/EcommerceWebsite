@@ -1,0 +1,204 @@
+/* === Signup Page Styling (with Top Gap) === */
+.signup-section {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #f9fafb, #1baaa8);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 150vh;
+}
+
+/* === Container === */
+.signup-container {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+
+/* === Signup Box === */
+.signup-wrapper {
+    background: linear-gradient(135deg, #f9fafb, #1baaa8);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Title === */
+.signup-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* === Form === */
+.signup-form-group {
+    margin-bottom: 20px;
+}
+
+.signup-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.signup-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 4px rgba(13, 110, 253, 0.3);
+}
+
+/* === Button === */
+.signup-btn {
+    width: 100%;
+    background-color: blue;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 12px 0;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: rgb(29, 3, 87);
+}
+
+/* === Error Text === */
+.signup-error {
+    color: #d9534f;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* === Bottom Text === */
+.signup-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.signup-login-link {
+    color: #555;
+    font-size: 15px;
+}
+
+.signup-login-text {
+    color: #007bff;
+    font-weight: 600;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.signup-login-text:hover {
+    text-decoration: underline;
+    color: #0056b3;
+    text-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+/* === OR Divider === */
+.signup-or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.signup-or span {
+    background-color: #ff6633;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 102, 51, 0.3);
+}
+
+/* === Social Icons === */
+.signup-social-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.signup-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.signup-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.signup-social.google { background: #db4437; }
+.signup-social.github { background: #068752; }
+.signup-social.facebook { background: #3b5998; }
+.signup-social.twitter { background: #1da1f2; }
+.signup-social.linkedin { background: #0077b5; }
+.signup-social.instagram { background: #e1306c; }
+
+.signup-social:hover {
+    transform: scale(1.1);
+}
+/* === Responsive Social Icons Fix === */
+
+/*  Tablet (max-width: 991px) */
+@media (max-width: 991px) {
+  .signup-social {
+    width: 42px;
+    height: 42px;
+    font-size: 17px;
+  }
+  .signup-social-list {
+    gap: 14px;
+  }
+}
+
+/*  Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .signup-social-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 14px;
+    max-width: 250px; 
+    margin: 0 auto;
+  }
+
+  .signup-social {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+/*  Small Phones (max-width: 480px) — neat 3x2 grid */
+@media (max-width: 480px) {
+  .signup-social-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 12px;
+    justify-items: center;
+    align-items: center;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .signup-social {
+    width: 38px;
+    height: 38px;
+    font-size: 15px;
+  }
+}
