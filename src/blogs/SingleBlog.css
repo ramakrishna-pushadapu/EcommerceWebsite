@@ -1,0 +1,289 @@
+
+
+.blog-single {
+  background-color: #f8f9fb;
+  padding: 80px 0;
+}
+
+/* ---------- Article Container ---------- */
+.blog-single article {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding: 30px;
+}
+
+.section-wrapper {
+  margin-top: 30px;
+}
+
+.post-item.style-2 {
+  margin-bottom: 40px;
+}
+
+/* ---------- Blog Image ---------- */
+.post-thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.post-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.post-thumb:hover img {
+  transform: scale(1.05);
+}
+
+/* ---------- Blog Content ---------- */
+.post-content {
+  padding-top: 25px;
+}
+
+.post-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.meta-post {
+  margin-bottom: 20px;
+}
+
+.meta-post ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.meta-post li {
+  font-size: 0.95rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.meta-post li i {
+  color: #007bff;
+}
+
+/* ---------- Paragraph & Text ---------- */
+.post-content p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* ---------- Blockquote ---------- */
+blockquote {
+  padding: 15px 25px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  margin: 25px 0;
+}
+
+blockquote p {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #333;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+blockquote cite a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* ---------- Inline Images ---------- */
+.post-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 25px 0;
+  transition: 0.3s ease;
+}
+
+.post-content img:hover {
+  transform: scale(1.02);
+}
+
+/* ---------- Video Thumbnail ---------- */
+.video-thumb {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 25px 0;
+}
+
+.video-thumb img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.video-thumb .video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.video-thumb .video-button:hover {
+  background: #0056b3;
+}
+
+/* ---------- Tags & Socials ---------- */
+.tags-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+.tags-section .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags-section .tags li a {
+  display: inline-block;
+  background: #eef2f7;
+  color: #444;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.tags-section .tags li a:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* ---------- Social Icons ---------- */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons li a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.facebook { background: #3b5998; }
+.twitter { background: #1da1f2; }
+.linkedin { background: #0077b5; }
+.instagram { background: #e4405f; }
+.pinterest { background: #bd081c; }
+
+.social-icons li a:hover {
+  opacity: 0.8;
+}
+
+/* ---------- Navigation Section ---------- */
+.navigations-part {
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  padding-top: 30px;
+}
+
+.navigations-part .left .prev,
+.navigations-part .right .next {
+  font-weight: 600;
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.3s;
+  
+ 
+}
+
+.navigations-part .left .prev:hover,
+.navigations-part .right .next:hover {
+  color: #0056b3;
+}
+
+.navigations-part .title {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navigations-part .title:hover {
+  color: #007bff;
+}
+
+/* Center Matter */
+.navigations-part .matter {
+  flex: 1;
+  text-align: center;
+  background:rgba(228, 234, 235, 0.533);
+}
+
+.navigations-part .matter p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #db0808;
+  margin: 0;
+}
+
+
+
+
+/* ---------- Sidebar ---------- */
+aside {
+  margin-top: 40px;
+}
+
+@media (max-width: 991px) {
+  .blog-single article {
+    padding: 20px;
+  }
+
+  .tags-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .navigations-part .matter {
+    order: 2;
+  }
+}
