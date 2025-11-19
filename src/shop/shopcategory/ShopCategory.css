@@ -1,0 +1,42 @@
+/* ===== Category Header ===== */
+.category-header {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  
+ 
+}
+
+.category-header h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+ 
+}
+
+/* ===== Category Buttons ===== */
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+ 
+}
+
+.category-buttons button {
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: #fff !important;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+   
+}
+
+/* Active Category (already highlighted by bg-warning in JS) */
+.category-buttons .bg-warning {
+  box-shadow: 0 4px 10px rgba(255, 193, 7, 0.5);
+ 
+}
