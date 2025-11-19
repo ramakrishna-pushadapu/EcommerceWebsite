@@ -1,0 +1,175 @@
+
+
+.single-product {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.section-bg {
+  background: #fff;
+}
+
+/* --- Product Details Section --- */
+.single-product__details {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+/* --- Product Image Section --- */
+.single-product__thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.single-product__image img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.single-product__image img:hover {
+  transform: scale(1.05);
+}
+
+/* --- Swiper Arrows (Animated Appear on Hover) --- */
+.single-product__prev,
+.single-product__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0; 
+  transition: all 0.4s ease;
+}
+
+/* Initially arrows stay outside the image */
+.single-product__prev {
+  left: -60px;
+}
+
+.single-product__next {
+  right: -60px;
+}
+
+/* When hovering over the image container */
+.single-product__thumb:hover .single-product__prev {
+  left: 15px; /* Slide in */
+  opacity: 1;
+}
+
+.single-product__thumb:hover .single-product__next {
+  right: 15px; /* Slide in */
+  opacity: 1;
+}
+
+/* Hover effects on the buttons */
+.single-product__prev:hover,
+.single-product__next:hover {
+  background: #ff6b6b;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .single-product__thumb:hover .single-product__prev {
+    left: 5px;
+  }
+  .single-product__thumb:hover .single-product__next {
+    right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .single-product__thumb:hover .single-product__prev {
+    left: 10px;
+  }
+  .single-product__thumb:hover .single-product__next {
+    right: 10px;
+  }
+}
+
+/* --- Product Info Section --- */
+.single-product__content {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .single-product__content {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}
+
+/* --- Review Section --- */
+.single-product__review {
+  margin-top: 60px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+}
+
+/* --- Typography --- */
+.single-product__details h2,
+.single-product__content h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.single-product__details p,
+.single-product__content p {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* --- Right Sidebar Divider --- */
+.col-lg-4 {
+  position: relative;
+}
+
+.col-lg-4::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #eee;
+}
+
+/* --- Utility Enhancements --- */
+.text-muted {
+  color: #777;
+}
+
+.text-warning {
+  color: #ffc107 !important;
+}
+
+.btn-custom {
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+}
+
+.btn-custom:hover {
+  background: #ff3b3b;
+}
